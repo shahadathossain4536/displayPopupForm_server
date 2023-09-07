@@ -2,29 +2,33 @@
 
 // Function to create and display the popup form
 function displayPopupForm() {
-  // Create a container for the popup
+  // container for the popup
   const popupContainer = document.createElement('div');
   popupContainer.style.position = 'fixed';
   popupContainer.style.right = 0;
+  popupContainer.style.top = 0;
+  popupContainer.style.left = 0;
   popupContainer.style.bottom = 0;
   popupContainer.style.display = 'flex';
   popupContainer.style.justifyContent = 'center';
   popupContainer.style.alignItems = 'center';
   popupContainer.style.zIndex = 1000;
+  popupContainer.style.backgroundColor = 'rgb(0 0 0 / 16%)';
   popupContainer.className = 'popup-container';
 
-  // Create an overlay to darken the background
+  //  overlay to darken the background
   const overlay = document.createElement('div');
   overlay.className = 'popup-overlay';
 
-  // Create the popup form and add it to the container
+  //the popup form and add it to the container
   const formContainer = document.createElement('div');
   formContainer.style.backgroundColor = 'white';
   formContainer.style.padding = '20px';
   formContainer.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.2)';
   formContainer.style.borderRadius = '8px';
-  formContainer.style.maxWidth = '400px';
+  formContainer.style.maxWidth = '300px';
   formContainer.style.width = '100%';
+
 
 
   formContainer.className = 'popup-form-container';

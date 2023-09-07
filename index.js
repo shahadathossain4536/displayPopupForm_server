@@ -30,12 +30,12 @@ async function run() {
         // Read the JavaScript file
         fs.readFile('./popup-form.js', 'utf8', (err, data) => {
           if (err) {
-            // Handle the error, e.g., file not found
+     
             res.status(404).send('File not found');
           } else {
-            // Set the appropriate content type for JavaScript
+       
             res.setHeader('Content-Type', 'application/javascript');
-            // Send the file content as the response
+          
             res.send(data);
           }
         });

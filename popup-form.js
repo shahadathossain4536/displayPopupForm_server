@@ -8,9 +8,9 @@ function displayPopupForm() {
   popupContainer.style.right = 0;
   popupContainer.style.bottom = 0;
   popupContainer.style.display = 'flex';
-  popupContainer.style.justifyContent  = 'center';
+  popupContainer.style.justifyContent = 'center';
   popupContainer.style.alignItems = 'center';
-  popupContainer.style.zIndex  = 1000;
+  popupContainer.style.zIndex = 1000;
   popupContainer.className = 'popup-container';
 
   // Create an overlay to darken the background
@@ -19,7 +19,7 @@ function displayPopupForm() {
 
   // Create the popup form and add it to the container
   const formContainer = document.createElement('div');
-  formContainer.style. backgroundColor = 'white';
+  formContainer.style.backgroundColor = 'white';
   formContainer.style.padding = '20px';
   formContainer.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.2)';
   formContainer.style.borderRadius = '8px';
